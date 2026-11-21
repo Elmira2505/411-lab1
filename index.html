@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+   
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <h2 class="text-3xl font-bold text-center mb-8">
+        Variables and Functions
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-blue-200 p-5 rounded-xl shadow-sm">
+          <h2 class="text-xl font-semibold mb-3">Task 1</h2>
+          <p>First assignment</p>
+          <form id="form1" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="firsName"
+              >
+                First name:
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="firstName"
+                type="text"
+                placeholder="firstName"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="lastName"
+              >
+                Last name:
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="lastName"
+                type="text"
+                placeholder="lastName"
+              />
+            </div>
+
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                id="submit1"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+          <h2 class="mb-3 mt-8 text-lg font-bold text-red-800" id="result1">Result:</h2>
+       </div>
+
+        <div class="bg-green-200 p-5 rounded-xl shadow-sm">
+          <h2 class="text-xl font-semibold mb-3">Task 2</h2>
+          <p>Second assignment</p>
+          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="price"
+              >
+                Price:
+              </label>
+              <input
+                class="price shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="number"
+                placeholder="price"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="quantity"
+              >
+                Quantity:
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="quantity"
+                type="number"
+                placeholder="quantity"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="taxRate"
+              >
+                Tax Rate:
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="taxRate"
+                type="number"
+                placeholder="taxRate"
+              />
+            </div>
+
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                id="submit2"
+                type="button"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+          <h2 class="mb-3 mt-8 text-lg font-bold text-red-800" id="result2">Result:</h2>
+        </div>
+
+        <div class="bg-pink-200 p-5 rounded-xl shadow-sm">
+          <h2 class="text-xl font-semibold mb-3">Task 3</h2>
+          <p>Third assignment</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+
+</html>
