@@ -3,26 +3,26 @@ const quantity = document.getElementById("quantity");
 const taxRate = document.getElementById("taxRate");
 const btn2 = document.getElementById("submit2");
 const result2 = document.getElementById("result2");
-console.log("result - ", result12.textContent);
-btn.addEventListener("click", (event) => {
+console.log("result - ", result2.textContent);
+btn2.addEventListener("click", (event) => {
   event.preventDefault();
-  formatFullName(firstName, lastName);
-});
-btn.document.addEventListener("keyup", (event) => {
-  if (event.code === "Enter") console.log("enter was pressed");
+  calculateTotalCost(price, quantity, taxRate)
 });
 
-function calculateTotalCost( price, quantity, taxRate.) {
+
+function calculateTotalCost( price, quantity, taxRate) {
+  /*
   if (lastName.value.trim().length === 0 || firstName.value.trim().length === 0)
-    return (result1.innerText = "Invalid name input.");
+    return (result2.innerText = "Invalid name input.");
   console.log(firstName.textContent, lastName.textContent);
-  const firstNameFormat =
-    firstName.value.trim().slice(0, 1).toUpperCase() +
-    firstName.value.trim().slice(1).toLowerCase();
-  const lastNameFormat =
-    lastName.value.trim().slice(0, 1).toUpperCase() +
-    lastName.value.trim().slice(1).toLowerCase();
-  console.log(firstNameFormat);
+  */
+ const priceValue = Number(price.value)
+ const quantityValue =  Number(quantity.value);
+ const taxRateValue =  Number(taxRate.value);
+  const totalCost = (priceValue * quantityValue) * (1 + taxRateValue)
+  console.log(priceValue * quantityValue);
+  console.log(1 + taxRateValue);
+  console.log(totalCost)
 
-  result1.innerText = `Result: ${firstNameFormat} ${lastNameFormat}`;
+  result2.innerText = `Result: ${totalCost}`;
 }
